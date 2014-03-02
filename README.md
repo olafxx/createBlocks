@@ -3,7 +3,8 @@ createBlocks
 
 My small IDE 
 
-Запуск: createBlocks/index.html (Используется ajax, для запуска нужен сервер)
+Запуск: createBlocks/index.html (Используется ajax, для запуска нужен сервер).
+
 Описание: 
   
   По макету рисуются блоки, которые автоматически генерируются в html код.
