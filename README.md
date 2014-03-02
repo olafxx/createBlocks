@@ -3,7 +3,7 @@ createBlocks
 
 My small IDE 
 
-Запуск: createBlocks/index.html (Используется ajax, для запуска нужен сервер).
+Запуск: createBlocks/index.html (Используется ajax,php для запуска нужен сервер).
 
 Описание: 
   
@@ -19,3 +19,4 @@ My small IDE
   Дважды кликнув по существующему блоку, переходим на внутренний уровень, тем самым осуществляем вложенность блоков.  
   
 Результат json и html  храняться createBlocks\projects\firstProject    
+Пример работы http://createblocks.ucoz.ru/createBlocks/  (Сервер без php, поэтоиы вложенность н сохранение состояния не работает.)
