@@ -1,0 +1,73 @@
+body {
+  	margin:0;
+	padding:0;
+	position:relative;
+	}
+ 	.layout {
+		position: relative;
+		margin:0;
+		padding:0;
+		left:0;
+		}
+		.maket {
+			margin:auto; 
+			position:relative; 
+			z-index:1;
+			}
+		
+.node, .nodeParent {
+	position:absolute;
+	opacity:0.5;
+	background:#00ff00;
+	z-index:9;
+	}
+	
+.nodeParent {
+	border:1px solid #ff0000;
+	background:transparent;
+	opacity:1;
+	z-index:5;
+	}	
+	
+	
+.nav {
+	position:fixed; 
+	right:0; 
+	top:0; 
+	bottom:0; 
+	padding:10px; 
+	background:#42aaff; 
+	z-index:99999;
+	 outline: 1px solid #42aaff
+	}
+  	
+.nav::selection {
+    background: transparent; 
+   }	
+	.nav .btn {
+		position   : relative;
+		width      : 34px;
+		height     : 34px;
+		display    : block;		
+		/*border     : 1px dashed #000;*/
+		border-radius : 5px;
+		margin-top   : 10px;
+		cursor     : pointer;
+		background-color : #fff;
+		background-position : 50% 50%;
+		background-repeat : no-repeat;
+		z-index  : 9999;
+		}		
+	.nav .selected {
+		background-color:#ffa500;
+		}
+
+@media only screen and (max-device-width: 1024px) 
+{
+ 
+	.layout {
+  		padding-right:50px;
+  		margin-right:0;
+  		}
+		
+}

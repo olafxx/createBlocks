@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=0.97, maximum-scale=0.97, user-scalable=no">
+
+    <link href="lib/b-Interface/style.css" rel="stylesheet" />
+	<script src="/setting.js"></script>
+	
+	<title>Markup</title>
+
+	
+ </head>
+<body>
+	
+ 
+		<script src="lib/setting.js"></script>
+
+
+		<script src="lib/outsource/jquery-2.0.3.min.js"></script>
+	
+	<!-- bd --> 
+		<script src="lib/storage/main.js"></script>
+ 	<!----> 
+
+	<!-- tool --> 
+		<script src="lib/helpers.js"></script>
+		<script src="lib/storage/saveToStorage.js"></script>
+ 	<!----> 
+	
+	
+	<!-- b-Interface --> 
+		<script src="lib/b-Interface/removeTag.js"></script>	
+		<script src="lib/b-Interface/node.js"></script>
+		<script src="lib/b-Interface/ants.js"></script>		   
+		<script src="lib/b-Interface/btns.js"></script>
+		<script src="lib/b-Interface/event.js"></script>	
+		<script src="lib/b-Interface/createTag.js"></script>	
+		<script src="lib/b-Interface/toolMediator.js"></script>
+		
+		<script src="lib/b-Interface/visualisationNodes.js"></script>		
+		
+		<script src="lib/b-Interface/levelLayer.js"></script>
+	<!----> 
+	 
+<script>
+  
+			var helpers = new helpers();			
+			var storage = new storage();  			 
+			var removeTag = new removeTag();
+			var nav = new btns();
+			
+            var saveToStorage = new saveToStorage();
+			
+			
+			var changeLevelLayer = new levelLayer();			 		 
+			document.addEventListener("mousedown", changeLevelLayer.enable, false);	
+			document.addEventListener("mouseup", saveToStorage.refresh, false);	
+
+			document.addEventListener("touchstart", changeLevelLayer.enable, false);	
+			document.addEventListener("touchend", saveToStorage.refresh, false);	
+			
+			nav.init();		
+			nav.addBtn("blank", new toolMediator("blank"));
+			nav.addBtn("tag", new createTag());
+			nav.addBtn("tags", new toolMediator("duplicate"));
+			nav.addBtn("move", new toolMediator("move"));
+			nav.addBtn("resize", new toolMediator("resize"));
+			nav.addBtn("remove", new toolMediator("remove"));
+			helpers.clickNavBtn("blank");
+		 
+			// show bd 
+			var screen = new visualisationNodes(); 				
+ 				screen.replaceCanvas();
+				
+			//		
+			event = new event();
+			event.disableSelected(window) 
+	
+	
+	
+	        // экранный наблюдатель
+	       /* setInterval(function(){ 
+				screen.replaceCanvas();
+			    helpers.clickNavBtn("selected");
+				//console.log("++")
+			},2000);
+			*/
+			
+			
+ 		</script>
+	
+ 	
+  	
+ 	
+	
+</body>
+</html>

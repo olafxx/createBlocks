@@ -1,0 +1,4 @@
+
+
+var projectName = "firstProject";	
+ 
