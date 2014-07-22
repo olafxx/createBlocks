@@ -1,7 +1,7 @@
 createBlocks
 ============
 
-My small IDE, работает под Chrome и IPad 
+Работает под Chrome и IPad 
 
 Запуск: createBlocks/index.html (Используется ajax,php для запуска нужен сервер).
 
