@@ -1,10 +1,12 @@
 createBlocks
 ============
 
+<b>Видео</b> - пример работы: http://youtu.be/0PB3bFHFe6c
+
 Пример on-line: http://createblocks.ucoz.ru/createBlocks/ 
 (Сервер без php, поэтому не работают удаление блоков, войти внутрь блока при двойном щелчке, при обновление страницы блоки остаются. Это реализовано, но нужно php)
 
-<b>Видео</b> - пример работы: http://youtu.be/0PB3bFHFe6c
+
 
 
 Работает под Chrome и IPad 
